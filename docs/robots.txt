@@ -1,0 +1,27 @@
+# robots.txt for widget.toolfyi.com
+User-agent: *
+Allow: /
+
+# AI Crawlers welcomed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://widget.toolfyi.com/sitemap.xml
