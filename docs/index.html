@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utility FYI Embed Widgets — Units, Timezones, Holidays, Names for Any Website</title>
+  <meta name="description" content="Embed Utility FYI widgets — 220 units, 600 timezones, 200+ country holidays, Korean name romanization — on any website. 4 npm packages, zero dependencies, Shadow DOM, 4 themes, free CDN.">
+  <meta name="theme-color" content="#3B82F6">
+  <meta name="keywords" content="unit conversion widget, timezone widget, holiday widget, name widget, embed, oembed, shadow dom, fyipedia, utilityfyi, toolfyi">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Utility FYI Embed Widgets — 4 Site Family of Daily Reference Tools">
+  <meta property="og:description" content="Embed unit conversion, timezone, holiday, and name widgets from the Utility FYI family. Zero dependencies, Shadow DOM, 4 themes, free CDN.">
+  <meta property="og:url" content="https://widget.toolfyi.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://toolfyi.com/static/og/homepage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Utility FYI">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Utility FYI Embed Widgets — 4 npm packages for everyday reference">
+  <meta name="twitter:description" content="Units, timezones, holidays, names — embed in one line of HTML. Zero dependencies, free CDN.">
+  <meta name="twitter:image" content="https://toolfyi.com/static/og/homepage.png">
+
+  <link rel="canonical" href="https://widget.toolfyi.com">
+  <meta name="author" content="FYIPedia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://toolfyi.com/static/favicon.ico" sizes="32x32">
+  <link rel="icon" href="https://toolfyi.com/static/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://unitfyi.com">
+  <link rel="dns-prefetch" href="https://timefyi.com">
+  <link rel="dns-prefetch" href="https://holidayfyi.com">
+  <link rel="dns-prefetch" href="https://namefyi.com">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Utility FYI Embed Widgets",
+        "url": "https://widget.toolfyi.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Family of 4 embeddable widget packages for daily reference utilities: UnitFYI, TimeFYI, HolidayFYI, NameFYI. Zero dependencies, Shadow DOM isolation, 4 themes, free CDN.",
+        "publisher": {"@type": "Organization", "name": "FYIPedia", "url": "https://fyipedia.com", "logo": "https://fyipedia.com/static/icon.svg"},
+        "isPartOf": {"@type": "WebSite", "name": "Utility FYI", "url": "https://toolfyi.com"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "FYIPedia", "item": "https://fyipedia.com"},
+          {"@type": "ListItem", "position": 2, "name": "Utility FYI", "item": "https://toolfyi.com"},
+          {"@type": "ListItem", "position": 3, "name": "Widget Family Docs"}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Utility FYI Embed Packages",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {"@type": "SoftwareSourceCode", "name": "unitfyi-embed", "url": "https://www.npmjs.com/package/unitfyi-embed", "codeRepository": "https://github.com/fyipedia/unitfyi-embed", "programmingLanguage": "TypeScript", "runtimePlatform": "Browser", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "timefyi-embed", "url": "https://www.npmjs.com/package/timefyi-embed", "codeRepository": "https://github.com/fyipedia/timefyi-embed", "programmingLanguage": "TypeScript", "runtimePlatform": "Browser", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "holidayfyi-embed", "url": "https://www.npmjs.com/package/holidayfyi-embed", "codeRepository": "https://github.com/fyipedia/holidayfyi-embed", "programmingLanguage": "TypeScript", "runtimePlatform": "Browser", "license": "https://opensource.org/licenses/MIT"},
+          {"@type": "SoftwareSourceCode", "name": "namefyi-embed", "url": "https://www.npmjs.com/package/namefyi-embed", "codeRepository": "https://github.com/fyipedia/namefyi-embed", "programmingLanguage": "TypeScript", "runtimePlatform": "Browser", "license": "https://opensource.org/licenses/MIT"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "What units does UnitFYI support?", "acceptedAnswer": {"@type": "Answer", "text": "220 units across 20 categories: length (m/ft/in/yd/mi/km/nm/au/ly), mass (g/kg/lb/oz/t), volume (L/gal/qt/pt/fl-oz), area, temperature (C/F/K), pressure, energy, power, force, speed, time, frequency, data (B/KB/MB/GB/TB), data-rate, currency, fuel-economy, angle, illuminance, electric. Decimal precision via JavaScript BigNumber. Bidirectional conversion."}},
+          {"@type": "Question", "name": "How many timezones does TimeFYI cover?", "acceptedAnswer": {"@type": "Answer", "text": "All 600+ IANA timezone names + 25K+ cities. Each timezone has DST rules, UTC offset, current time, sunrise/sunset (where applicable), and business hours calculation. Cities link to country, region, and continent. API supports historical timezone lookup."}},
+          {"@type": "Question", "name": "Which countries do HolidayFYI widgets cover?", "acceptedAnswer": {"@type": "Answer", "text": "200+ countries with public + religious holidays. Easter calculation (Gregorian + Julian), lunar holiday lookup (Chinese New Year, Korean Chuseok, Hindu festivals), regional variations (US state-specific, German bundesland). Holidays shown for any year past/future. Coverage updated annually."}},
+          {"@type": "Question", "name": "Why does NameFYI focus on Korean names?", "acceptedAnswer": {"@type": "Answer", "text": "NameFYI specializes in Korean name romanization (4 systems: Revised Romanization, McCune-Reischauer, Yale, North Korean) + Five Elements (Wuxing) name analysis + CJK stroke counts. Common Korean surnames (Kim/Lee/Park/Choi) + given name etymology. Cross-references for given-name meaning across CJK languages."}},
+          {"@type": "Question", "name": "Are widget calculations accurate to high precision?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. UnitFYI uses BigNumber for arbitrary-precision conversion (avoids floating-point errors common in JavaScript). TimeFYI uses Luxon for timezone math. HolidayFYI uses precomputed lunar calendar tables to 2100. NameFYI Five Elements use deterministic stroke-count algorithm. No rounding artifacts."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#3B82F6' }, fontFamily: { mono: ['"JetBrains Mono"', '"Fira Code"', 'ui-monospace', 'monospace'] } } } }
+  </script>
+
+  <script>
+    (function(){
+      var t = localStorage.getItem('theme');
+      if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+    })();
+  </script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/unitfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/timefyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/holidayfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/namefyi-embed@1/dist/embed.min.js"></script>
+
+  <style>
+    [x-cloak]{display:none!important}
+    :root{--accent:#3B82F6} .accent-text{color:var(--accent)} .accent-bg{background-color:var(--accent)} .accent-border{border-color:var(--accent)}
+    pre{tab-size:2;margin:0}
+    .code-block{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,monospace}
+    .hl-tag{color:#7dd3fc} .hl-attr{color:#86efac} .hl-val{color:#fde68a} .hl-comment{color:#475569;font-style:italic}
+    .site-card { transition: all 0.2s; }
+    .site-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="https://toolfyi.com" class="flex items-center gap-2 font-bold text-lg" style="color: #3B82F6">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Utility FYI</span>
+        <span class="text-xs font-normal text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full font-sans">Widget Family</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="#sites" class="hover:text-accent">4 Sites</a>
+        <a href="#quick-start" class="hover:text-accent">Quick Start</a>
+        <a href="#widgets" class="hover:text-accent">Gallery</a>
+        <a href="#faq" class="hover:text-accent">FAQ</a>
+        <a href="https://github.com/fyipedia" class="hover:text-accent" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full" style="background: #3B82F6; color: white">4 Widget Packages · 1 Ecosystem</span>
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight">Utility FYI <span class="accent-text">Embed Widgets</span></h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        Embed <a href="https://unitfyi.com" class="accent-text font-semibold hover:underline">unit conversions</a>,
+        <a href="https://timefyi.com" class="accent-text font-semibold hover:underline">timezones</a>,
+        <a href="https://holidayfyi.com" class="accent-text font-semibold hover:underline">holidays</a>, and
+        <a href="https://namefyi.com" class="accent-text font-semibold hover:underline">name analysis</a>
+        in any website. <strong>220 units · 600 timezones · 200+ countries · Korean romanization (4 systems).</strong>
+      </p>
+      <p class="mt-4 text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+        Zero dependencies. Shadow DOM. 4 themes. BigNumber precision. Luxon timezone math. Free CDN.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#quick-start" class="px-5 py-2.5 rounded-lg font-medium accent-bg text-white hover:opacity-90 transition">Get Started</a>
+        <a href="https://toolfyi.com" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Browse Utility FYI →</a>
+        <a href="https://github.com/fyipedia" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">The Utility FYI Family</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Four utility-focused sites for daily reference. Each powers one widget package with high-precision domain logic.</p>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #3B82F6, #6366F1)">U</div>
+            <div>
+              <h3 class="font-bold text-lg"><a href="https://unitfyi.com" class="accent-text hover:underline">UnitFYI</a></h3>
+              <p class="text-xs text-slate-500">unitfyi.com · <a href="https://www.npmjs.com/package/unitfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>220 units · 20 categories</strong>. BigNumber decimal precision. SI + US customary + niche (data rates, illuminance, electric). Bidirectional conversion.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://unitfyi.com/units/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Browse</a>
+            <a href="https://unitfyi.com/tools/converter/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Converter</a>
+            <a href="https://unitfyi.com/categories/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Categories</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #0EA5E9, #3B82F6)">T</div>
+            <div>
+              <h3 class="font-bold text-lg"><a href="https://timefyi.com" class="accent-text hover:underline">TimeFYI</a></h3>
+              <p class="text-xs text-slate-500">timefyi.com · <a href="https://www.npmjs.com/package/timefyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>600 IANA timezones · 25K+ cities</strong>. DST rules, business hours, sunrise/sunset, world clock. Luxon timezone math.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://timefyi.com/worldclock/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">World Clock</a>
+            <a href="https://timefyi.com/timezone/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Timezones</a>
+            <a href="https://timefyi.com/tools/converter/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Converter</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #EAB308, #F59E0B)">H</div>
+            <div>
+              <h3 class="font-bold text-lg"><a href="https://holidayfyi.com" class="accent-text hover:underline">HolidayFYI</a></h3>
+              <p class="text-xs text-slate-500">holidayfyi.com · <a href="https://www.npmjs.com/package/holidayfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>200+ countries</strong>. Easter calculation, lunar calendar (Chinese/Korean/Hindu), regional variations, religious + public holidays.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://holidayfyi.com/holidays/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">All Holidays</a>
+            <a href="https://holidayfyi.com/countries/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Countries</a>
+            <a href="https://holidayfyi.com/tools/calendar/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Calendar</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #6366F1, #8B5CF6)">N</div>
+            <div>
+              <h3 class="font-bold text-lg"><a href="https://namefyi.com" class="accent-text hover:underline">NameFYI</a></h3>
+              <p class="text-xs text-slate-500">namefyi.com · <a href="https://www.npmjs.com/package/namefyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Korean romanization (<strong>4 systems</strong>: RR/MR/Yale/NK), Five Elements (Wuxing) analysis, CJK stroke counts, given-name etymology.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://namefyi.com/names/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Browse</a>
+            <a href="https://namefyi.com/tools/romanize/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Romanizer</a>
+            <a href="https://namefyi.com/tools/wuxing/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Five Elements</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border-2 border-dashed border-blue-300 dark:border-blue-700 bg-blue-50 dark:bg-blue-950/30 md:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #6366F1, #8B5CF6, #A855F7)">∞</div>
+            <div>
+              <h3 class="font-bold text-lg"><a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a></h3>
+              <p class="text-xs text-slate-500">fyipedia.com · umbrella ecosystem</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Utility FYI is one of <strong>11 FYI Families</strong>. Cross-references to Creative FYI (color/font for visual tools), Nature FYI (units of mass for biology), and more.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://fyipedia.com/families/" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">All Families</a>
+            <a href="https://creativefyi.com" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Creative FYI</a>
+            <a href="https://naturefyi.com" class="px-2 py-1 rounded bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 hover:bg-blue-200">Nature FYI</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick-start" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Quick Start</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Embed unit converters, timezone clocks, holiday lists, and name analysis in one line of HTML.</p>
+      <div class="mt-8 max-w-3xl mx-auto">
+        <pre class="code-block"><code><span class="hl-comment">&lt;!-- Load any combination of utility widget scripts --&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/unitfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+<span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/timefyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+
+<span class="hl-comment">&lt;!-- Drop widgets anywhere --&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-unitfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"meter"</span><span class="hl-tag">&gt;&lt;/div&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-timefyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"asia-seoul"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 space-y-4">
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <summary class="font-semibold cursor-pointer">What units does UnitFYI support?</summary>
+          <p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://unitfyi.com" class="accent-text hover:underline">UnitFYI</a> supports <strong>220 units across 20 categories</strong>: length, mass, volume, area, temperature, pressure, energy, power, force, speed, time, frequency, data, data-rate, currency, fuel-economy, angle, illuminance, and electric. Decimal precision via BigNumber. <a href="https://unitfyi.com/categories/" class="accent-text hover:underline">Browse categories</a> or use the <a href="https://unitfyi.com/tools/converter/" class="accent-text hover:underline">converter</a>.</p>
+        </details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <summary class="font-semibold cursor-pointer">How many timezones does TimeFYI cover?</summary>
+          <p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://timefyi.com" class="accent-text hover:underline">TimeFYI</a> covers all <strong>600+ IANA timezone names + 25K+ cities</strong>. Each timezone has DST rules, UTC offset, current time, sunrise/sunset (where applicable), and business hours calculation. <a href="https://timefyi.com/worldclock/" class="accent-text hover:underline">World clock</a> view shows multiple cities simultaneously.</p>
+        </details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <summary class="font-semibold cursor-pointer">Which countries do HolidayFYI widgets cover?</summary>
+          <p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://holidayfyi.com" class="accent-text hover:underline">HolidayFYI</a> covers <strong>200+ countries</strong> with public + religious holidays. Includes Easter calculation, lunar holiday lookup (Chinese New Year, Korean Chuseok, Hindu festivals), regional variations (US state-specific, German bundesland). <a href="https://holidayfyi.com/countries/" class="accent-text hover:underline">Browse countries</a>.</p>
+        </details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <summary class="font-semibold cursor-pointer">Why does NameFYI focus on Korean names?</summary>
+          <p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://namefyi.com" class="accent-text hover:underline">NameFYI</a> specializes in <strong>Korean name romanization (4 systems)</strong>: Revised Romanization, McCune-Reischauer, Yale, North Korean. Plus Five Elements (Wuxing) name analysis + CJK stroke counts. <a href="https://namefyi.com/tools/romanize/" class="accent-text hover:underline">Try the romanizer</a> or <a href="https://namefyi.com/tools/wuxing/" class="accent-text hover:underline">Five Elements analyzer</a>.</p>
+        </details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <summary class="font-semibold cursor-pointer">Are widget calculations accurate to high precision?</summary>
+          <p class="mt-3 text-slate-600 dark:text-slate-400">Yes. UnitFYI uses BigNumber for arbitrary-precision arithmetic. TimeFYI uses Luxon for timezone math. HolidayFYI uses precomputed lunar tables to 2100. NameFYI Five Elements use deterministic stroke-count algorithm. No floating-point artifacts.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Learn More</h2>
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">UnitFYI Resources</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://unitfyi.com/units/" class="accent-text hover:underline">220 Units</a></li>
+            <li><a href="https://unitfyi.com/categories/" class="accent-text hover:underline">20 Categories</a></li>
+            <li><a href="https://unitfyi.com/tools/converter/" class="accent-text hover:underline">Converter</a></li>
+            <li><a href="https://unitfyi.com/glossary/" class="accent-text hover:underline">Measurement Glossary</a></li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">TimeFYI Resources</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://timefyi.com/worldclock/" class="accent-text hover:underline">World Clock</a></li>
+            <li><a href="https://timefyi.com/timezone/" class="accent-text hover:underline">All Timezones</a></li>
+            <li><a href="https://timefyi.com/tools/converter/" class="accent-text hover:underline">Time Converter</a></li>
+            <li><a href="https://timefyi.com/sun/" class="accent-text hover:underline">Sun Times</a></li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">HolidayFYI Resources</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://holidayfyi.com/holidays/" class="accent-text hover:underline">All Holidays</a></li>
+            <li><a href="https://holidayfyi.com/countries/" class="accent-text hover:underline">200+ Countries</a></li>
+            <li><a href="https://holidayfyi.com/types/" class="accent-text hover:underline">Holiday Types</a></li>
+            <li><a href="https://holidayfyi.com/glossary/" class="accent-text hover:underline">Glossary</a></li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="font-bold mb-2">NameFYI Resources</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://namefyi.com/names/" class="accent-text hover:underline">Browse Names</a></li>
+            <li><a href="https://namefyi.com/tools/romanize/" class="accent-text hover:underline">Romanizer</a></li>
+            <li><a href="https://namefyi.com/tools/wuxing/" class="accent-text hover:underline">Five Elements</a></li>
+            <li><a href="https://namefyi.com/surnames/" class="accent-text hover:underline">Korean Surnames</a></li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border-2 border-blue-300 dark:border-blue-700">
+          <h3 class="font-bold mb-2">Sister Families</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://widget.creativefyi.com" class="accent-text hover:underline">Creative FYI Widgets</a></li>
+            <li><a href="https://widget.naturefyi.com" class="accent-text hover:underline">Nature FYI Widgets</a></li>
+            <li><a href="https://creativefyi.com" class="accent-text hover:underline">Creative FYI Home</a></li>
+            <li><a href="https://naturefyi.com" class="accent-text hover:underline">Nature FYI Home</a></li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-lg bg-white dark:bg-slate-900 border-2 border-blue-300 dark:border-blue-700">
+          <h3 class="font-bold mb-2">FYIPedia Ecosystem</h3>
+          <ul class="text-sm space-y-1 text-slate-600 dark:text-slate-400">
+            <li><a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia Home</a></li>
+            <li><a href="https://fyipedia.com/families/" class="accent-text hover:underline">All 11 Families</a></li>
+            <li><a href="https://toolfyi.com" class="accent-text hover:underline">Utility FYI Home</a></li>
+            <li><a href="https://fyipedia.com/developers/" class="accent-text hover:underline">Developer Hub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div>
+          <h3 class="font-bold mb-3">Utility FYI</h3>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+            <li><a href="https://unitfyi.com" class="hover:accent-text">UnitFYI</a></li>
+            <li><a href="https://timefyi.com" class="hover:accent-text">TimeFYI</a></li>
+            <li><a href="https://holidayfyi.com" class="hover:accent-text">HolidayFYI</a></li>
+            <li><a href="https://namefyi.com" class="hover:accent-text">NameFYI</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">Widget Docs</h3>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+            <li><a href="https://widget.unitfyi.com" class="hover:accent-text">widget.unitfyi.com</a></li>
+            <li><a href="https://widget.timefyi.com" class="hover:accent-text">widget.timefyi.com</a></li>
+            <li><a href="https://widget.holidayfyi.com" class="hover:accent-text">widget.holidayfyi.com</a></li>
+            <li><a href="https://widget.namefyi.com" class="hover:accent-text">widget.namefyi.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">npm Packages</h3>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+            <li><a href="https://www.npmjs.com/package/unitfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">unitfyi-embed</a></li>
+            <li><a href="https://www.npmjs.com/package/timefyi-embed" target="_blank" rel="noopener" class="hover:accent-text">timefyi-embed</a></li>
+            <li><a href="https://www.npmjs.com/package/holidayfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">holidayfyi-embed</a></li>
+            <li><a href="https://www.npmjs.com/package/namefyi-embed" target="_blank" rel="noopener" class="hover:accent-text">namefyi-embed</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold mb-3">Ecosystem</h3>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+            <li><a href="https://fyipedia.com" class="hover:accent-text">FYIPedia</a></li>
+            <li><a href="https://github.com/fyipedia" target="_blank" rel="noopener" class="hover:accent-text">GitHub Org</a></li>
+            <li><a href="https://toolfyi.com" class="hover:accent-text">Utility FYI</a></li>
+            <li><a href="https://widget.creativefyi.com" class="hover:accent-text">Sister: Creative FYI</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-between gap-4">
+        <p>Built with care by <a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a>. MIT licensed.</p>
+        <p>Powered by <a href="https://toolfyi.com" class="accent-text hover:underline">Utility FYI</a> · BigNumber + Luxon precision.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
